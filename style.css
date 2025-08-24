@@ -10,16 +10,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* vertical-align: middle; */
 }
 
 .signup_container {
     width: 35vw;
-    padding: 40px;
-    backdrop-filter: blur(2px);
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.650);
-    border-radius: 10px;
-    /* border: 1px solid rgba(0, 0, 0, 0.301); */
+    padding: 2.780vw 5.9vw;
+    backdrop-filter: blur(3px);
+    box-shadow: 0.140vw 0.140vw 1.042vw rgba(0, 0, 0, 0.650);
+    border-radius: 1.389vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,30 +27,58 @@ body {
 
 .signup_container h1 {
     color: white;
+    font-size: 2.5vw;
 }
+
+/* Icons css start's */
 
 .icons {
     color: white;
+    margin: 0.347vw;
+    cursor: default;
 }
+
+.icons i {
+    font-size: 1.7vw;
+    background-color: #1d6edf8c;
+    padding: 0.625vw 0.347vw 0.347vw 0.347vw;
+    width: 2.780vw;
+    height: 2.780vw;
+    text-align: center;
+    border-radius: 50%;
+    backdrop-filter: blur(0.140vw);
+    margin: 0.140vw;
+    transition: 0.2s;
+}
+
+.icons i:hover {
+    background-color: #1d6ddf;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0vw 0vw 0.347vw black;
+}
+
+/* Icons css end's */
 
 .div_2nd form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 0.695vw;
 }
 
 .div_2nd form input {
-    width: 250px;
-    height: 30px;
-    padding: 5px;
+    font-size: 1vw;
+    width: 19.445vw;
+    height: 2.432vw;
+    padding: 0.347vw;
     outline: none;
     border: none;
-    border-radius: 10px;
-    border: 0.5px solid transparent;
+    border-radius: 1.042vw;
+    border: 0.035vw solid transparent;
     background-color: white;
-    padding: 10px;
+    padding: 0.695vw;
     transition: 0.3s;
 }
 
@@ -61,15 +87,74 @@ body {
 }
 
 .sign_up_btn {
-    width: 100px;
-    margin-top: 8px;
+    font-size: 1.1vw;
+    width: 8.335vw;
+    padding: 0.347vw;
+    margin-top: 0.556vw;
+    color: white;
+    text-shadow: 0vw 0vw 0.278vw #1d6ddf !important;
+    text-shadow: 0.140vw 0.140vw 0.208vw black;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* backdrop-filter: blur(0px); */
     border: none;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px black;
+    border-radius: 1.390vw;
+    box-shadow: 0vw 0vw 0.347vw black;
     transition: 0.3s;
 }
 
 .sign_up_btn:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 8px black;
+    box-shadow: 0vw 0vw 0.556vw black;
 }
+
+
+.signup_quest {
+    font-size: 1.1vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.347vw;
+    border-radius: 0.695vw;
+}
+
+/* Login Page Link start's */
+
+/* .signup_quest span {
+    color: #1d6ddf;
+    cursor: pointer;
+    border-bottom: 0.070 solid black;
+    border-width: 0;
+    transition: 0.3s;
+}
+
+.signup_quest span:hover {
+    border-width: 1;
+} */
+
+
+.signup_quest span {
+    position: relative;
+    color: #3388ff;
+    cursor: pointer;
+}
+
+.signup_quest span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.070vw;
+    background-color: #1d6ddf;
+    transform: scaleX(0);
+    transform-origin: right;
+    /* Start from right so it shrinks left → right */
+    transition: transform 0.3s ease, transform-origin 0s;
+}
+
+.signup_quest span:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    /* Expand left → right */
+}
+
+/* Login Page Link end's */
