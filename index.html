@@ -22,7 +22,7 @@
 
     <!-- Sign Up page Start's________________________________________ -->
 
-    <div class="signup_container">
+    <div class="signup_container" id="signup_box">
 
         <h1>
             Signup
@@ -50,7 +50,7 @@
                 <button onclick="signup_btn()" id="signup_btn" class="both_btns">Sign Up</button>
 
                 <p class="both_fields_quest">
-                    Already have an account? <span onclick="signup_to_login()">Login</span>
+                    Already have an account? <span onclick="teleporter('sgnup_to_lgn')">Login</span>
                 </p>
             </form>
         </div>
@@ -63,7 +63,7 @@
 
     <!-- Login page Start's________________________________________ -->
 
-    <div class="login_container hide">
+    <div class="login_container hide" id="login_box">
 
         <h1>
             Login
@@ -87,10 +87,10 @@
                 <input type="email" placeholder="Email" name="Email" id="user_login_email">
                 <input type="password" placeholder="Password" name="Password" id="user_login_password">
 
-                <button onclick="signup_btn()" id="signup_btn" class="both_btns">Login</button>
+                <button onclick="login_btn()" id="signup_btn" class="both_btns">Login</button>
 
                 <p class="both_fields_quest">
-                    Don't have an account? <span onclick="login_to_signup()">Sign Up</span>
+                    Don't have an account? <span onclick="teleporter('lgn_to_sgnup')">Sign Up</span>
                 </p>
             </form>
         </div>
@@ -99,7 +99,8 @@
 
     <!-- Login page End's________________________________________ -->
 
-
+    <!-- My Jvascript Link________________________________________ -->
+    <script src="app.js"></script>
 
     <!-- Bootstrap Javascript Link________________________________________ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
