@@ -12,6 +12,8 @@ body {
     height: 100vh;
 }
 
+/* Sign Up page CSS start's________________________________________ */
+
 .signup_container {
     width: 35vw;
     padding: 2.780vw 5.9vw;
@@ -30,15 +32,52 @@ body {
     font-size: 2.5vw;
 }
 
-/* Icons css start's */
+/* Sign Up page CSS end's________________________________________ */
 
-.icons {
+
+
+/* Login page CSS start's________________________________________ */
+
+.login_container {
+    width: 35vw;
+    padding: 2.780vw 5.9vw;
+    backdrop-filter: blur(3px);
+    box-shadow: 0.140vw 0.140vw 1.042vw rgba(0, 0, 0, 0.650);
+    border-radius: 1.389vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login_container h1 {
+    color: white;
+    font-size: 2.5vw;
+}
+
+
+/* Login page CSS end's________________________________________ */
+
+
+
+/* Both pages css start's_______________________________________ */
+
+.message{
+    color: white;
+    font-size: 1vw;
+    margin: 0px 1vw 1vw 1vw;
+}
+
+/* Both pages icons css start's_______________________________________ */
+
+.both_pages_icons {
     color: white;
     margin: 0.347vw;
     cursor: default;
 }
 
-.icons i {
+.both_pages_icons i {
     font-size: 1.7vw;
     background-color: #1d6edf8c;
     padding: 0.625vw 0.347vw 0.347vw 0.347vw;
@@ -51,16 +90,16 @@ body {
     transition: 0.2s;
 }
 
-.icons i:hover {
+.both_pages_icons i:hover {
     background-color: #1d6ddf;
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 0vw 0vw 0.347vw black;
 }
 
-/* Icons css end's */
+/* Both pages icons css end's_______________________________________ */
 
-.div_2nd form {
+.inputs form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,25 +107,27 @@ body {
     gap: 0.695vw;
 }
 
-.div_2nd form input {
+.inputs form input {
     font-size: 1vw;
     width: 19.445vw;
     height: 2.432vw;
     padding: 0.347vw;
     outline: none;
     border: none;
-    border-radius: 1.042vw;
+    border-radius: 0.8vw;
     border: 0.035vw solid transparent;
     background-color: white;
     padding: 0.695vw;
     transition: 0.3s;
 }
 
-.div_2nd form input:focus {
+.inputs form input:focus {
     border-color: deepskyblue;
 }
 
-.sign_up_btn {
+/* Both pages btns css start's_______________________________________ */
+
+.both_btns {
     font-size: 1.1vw;
     width: 8.335vw;
     padding: 0.347vw;
@@ -94,7 +135,7 @@ body {
     color: white;
     text-shadow: 0vw 0vw 0.278vw #1d6ddf !important;
     text-shadow: 0.140vw 0.140vw 0.208vw black;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     /* backdrop-filter: blur(0px); */
     border: none;
     border-radius: 1.390vw;
@@ -102,42 +143,32 @@ body {
     transition: 0.3s;
 }
 
-.sign_up_btn:hover {
+.both_btns:hover {
     transform: scale(1.1);
-    box-shadow: 0vw 0vw 0.556vw black;
+    box-shadow: 0vw 0vw 0.6vw black;
 }
 
+/* Both pages btns css end's_______________________________________ */
 
-.signup_quest {
+/* Both fields quest css start's_______________________________________ */
+
+.both_fields_quest {
     font-size: 1.1vw;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 0.347vw;
-    border-radius: 0.695vw;
+    padding: 0.4vw 0.7vw;
+    border-radius: 0.7vw;
 }
 
-/* Login Page Link start's */
+/* Both pages quest link Css start's___________________________ */
 
-/* .signup_quest span {
-    color: #1d6ddf;
-    cursor: pointer;
-    border-bottom: 0.070 solid black;
-    border-width: 0;
-    transition: 0.3s;
-}
-
-.signup_quest span:hover {
-    border-width: 1;
-} */
-
-
-.signup_quest span {
+.both_fields_quest span {
     position: relative;
     color: #3388ff;
     cursor: pointer;
 }
 
-.signup_quest span::after {
+.both_fields_quest span::after {
     content: "";
     position: absolute;
     left: 0;
@@ -147,14 +178,20 @@ body {
     background-color: #1d6ddf;
     transform: scaleX(0);
     transform-origin: right;
-    /* Start from right so it shrinks left → right */
     transition: transform 0.3s ease, transform-origin 0s;
 }
 
-.signup_quest span:hover::after {
+.both_fields_quest span:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-    /* Expand left → right */
 }
 
-/* Login Page Link end's */
+.hide {
+    display: none;
+}
+
+/* Both pages quest link Css end's___________________________ */
+
+/* Both fields quest css start's_______________________________________ */
+
+/* Both pages css end's_______________________________________ */
