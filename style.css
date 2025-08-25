@@ -99,7 +99,7 @@ body {
 
 /* Both pages icons css end's_______________________________________ */
 
-.inputs form {
+.inputs div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +107,7 @@ body {
     gap: 0.695vw;
 }
 
-.inputs form input {
+.inputs div input {
     font-size: 1vw;
     width: 19.445vw;
     height: 2.432vw;
@@ -121,7 +121,7 @@ body {
     transition: 0.3s;
 }
 
-.inputs form input:focus {
+.inputs div input:focus {
     border-color: deepskyblue;
 }
 
