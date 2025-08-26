@@ -15,7 +15,7 @@ function signup_btn() {
         Swal.fire({
             icon: "error",
             title: "Error! All fields are required",
-            text: "Something went wrong!",
+            // text: "Something went wrong!",
         });
         return;
     }
@@ -23,7 +23,7 @@ function signup_btn() {
         Swal.fire({
             icon: "error",
             title: "Error! Enter valid email address",
-            text: "Something went wrong!",
+            // text: "Something went wrong!",
         });
         // console.error("Enter valid email address");
         return
@@ -32,8 +32,8 @@ function signup_btn() {
         teleporter(params = "sgnup_to_lgn")
         Swal.fire({
             icon: "error",
-            title: "Please login \nThis email is already registered",
-            text: "Something went wrong!",
+            title: "This email is already registered",
+            text: "Please login",
         });
         return
     }
@@ -57,14 +57,46 @@ function signup_btn() {
 
 // Login Btn Start's__________________________
 
-// const login_mail = document.getElementById('user_login_email')
-// const login_password = document.getElementById('user_login_password')
+const login_mail = document.getElementById('user_login_email')
+const login_password = document.getElementById('user_login_password')
 
-// function login_btn(params) {
+function login_btn() {
 
-// }
+    if (!login_mail.value.trim() || !login_password.value.trim()) {
+        Swal.fire({
+            icon: "error",
+            title: "Error! All fields are required",
+            // text: "Something went wrong!",
+        });
+        return;
+    }
+    else if (login_mail.value === localStorage.getItem("User Email") && login_password.value === localStorage.getItem("User Password")) {
+        alert("code worked")
+        return
+    }
+    else if (login_mail.value !== localStorage.getItem("User Email")){
+        Swal.fire({
+            icon: "warning",
+            title: "Email Is Icorrect",
+            text: "Enter Correct Email Address",
+        });
+    }
+
+}
 
 // Login Btn End's__________________________
+
+
+// Enter key support__________________________
+const login_arr = [login_mail, login_password]
+
+login_mail.addEventListener('keydown', (key) => {
+    if (key.code === 'Enter') login_btn()
+});
+login_password.addEventListener('keydown', (key) => {
+    if (key.code === 'Enter') login_btn()
+});
+// Enter key support__________________________
 
 
 // Teleporter Start's__________________________
