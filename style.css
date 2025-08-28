@@ -162,13 +162,17 @@ body {
 
 /* Both pages quest link Css start's___________________________ */
 
-.both_fields_quest span {
+a {
+    text-decoration: none;
+}
+
+.both_fields_quest span a {
     position: relative;
     color: #3388ff;
     cursor: pointer;
 }
 
-.both_fields_quest span::after {
+.both_fields_quest span a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -181,7 +185,7 @@ body {
     transition: transform 0.3s ease, transform-origin 0s;
 }
 
-.both_fields_quest span:hover::after {
+.both_fields_quest span a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
